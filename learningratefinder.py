@@ -88,7 +88,7 @@ class LearningRateFinder:
         # If no number of training epochs are supplied,
         # compute the training epochs based on a default sample size
         if epochs is None:
-            epochs = int(np.ceil(numSamples / float(batchSize)))
+            epochs = int(np.ceil(sampleSize / float(batchSize)))
             
         # Compute the total number of batch updates that will take place
         # while we are attempting to find a good starting learning rate
