@@ -16,11 +16,11 @@ class LearningRateFinder:
         self.losses = []
 
         # initialize our learning rate multiplier, average loss, best loss found thus far, current batch number, and weights file
-        self.lrMult = 1
-        self.avgLoss = 0
-        self.bestLoss = 1e9
-        self.batchNum = 0
-        self.weightsFile = None
+        self.lrMult = 1 # Learning rate multiplication factor
+        self.avgLoss = 0 # Average loss over time
+        self.bestLoss = 1e9 # The best loss we have found when training
+        self.batchNum = 0 # The current batch number update
+        self.weightsFile = None # Our path to the initial model weights
 
     def reset(self):
         # re-initialize all variables from our constructor
